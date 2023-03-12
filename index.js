@@ -10,8 +10,8 @@ onAuthStateChanged(Auth, (user) => {
     }
 })
 submit2.addEventListener('click',()=>{
-    email = document.getElementById('Email1').value;
-    password = document.getElementById('pass1').value;
+   const email = document.getElementById('Email1').value;
+    const password = document.getElementById('pass1').value;
     signInWithEmailAndPassword(Auth, email, password)
    .then((userCredential) => {
     // Signed in 
